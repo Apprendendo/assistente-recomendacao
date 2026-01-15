@@ -1,0 +1,10 @@
+{
+  "repositoryUrl": "https://github.com/clcmo/template.git",
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github",
+    "@semantic-release/npm"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "template-clcmo",
+  "version": "0.0.0-development",
+  "description": "Template de projeto para publicação com Semantic Release",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clcmo/template.git"
+  },
+  "author": "Camila <milla@apprendendo.blog>",
+  "license": "MIT",
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "devDependencies": {
+    "semantic-release": "^23.0.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/github": "^9.0.0",
+    "@semantic-release/npm": "^11.0.0"
+  }
+}
