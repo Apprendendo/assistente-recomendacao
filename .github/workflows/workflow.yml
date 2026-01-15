@@ -1,5 +1,5 @@
-name: Gerar versão do projeto
-run-name: ${{ github.actor }} está gerando uma nova versão do projeto
+name: Gerar API
+run-name: ${{ github.actor }} está gerando uma nova versão da API
 
 on:
   push:
@@ -17,26 +17,26 @@ permissions:
 
 
 jobs:
-  release:
+  backend:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout do código
+      - name: Checkout repo
         uses: actions/checkout@v3
-        with: 
-          fetch-depth: 0
 
-      - name: Instalar Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          node-version: '24.10.0'
+          python-version: '3.12'
 
-      - name: Instalar dependências
-        run: npm install
+      - name: Install dependencies
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r backend/requirements.txt
 
-      - name: Executar Semantic Release
+      - name: Run FastAPI
         env:
-          # GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+          OPENAI_TOKEN: ${{ secrets.OPENAI_TOKEN }}
+        run: |
+          source venv/bin/activate
+          uvicorn backend.main:app --host 0.0.0.0 --port 8000
