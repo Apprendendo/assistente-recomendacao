@@ -390,7 +390,7 @@ export default function App() {
 7. De volta ao Terminal, executar o server Expo
 
 ```bash
-npx expo-start
+npx expo start
 ```
 
 Obs. Você consegue testar dentro de seu celular, através de um QRCode gerado pelo Expo. Precisa baixar aplicativo no PlayStore ou AppStore.
