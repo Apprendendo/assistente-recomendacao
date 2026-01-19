@@ -1,9 +1,9 @@
-# Título do Projeto
+# Assistente de Recomendação - Aula Teste 2026
 
-[![GitHub license](https://img.shields.io/github/license/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template)
-[![GitHub stars](https://img.shields.io/github/stars/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template/network)
-[![GitHub issues](https://img.shields.io/github/issues/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template/issues)
+[![GitHub license](https://img.shields.io/github/license/Apprendendo/assistente-recomendacao?style=for-the-badge)](https://github.com/Apprendendo/assistente-recomendacao)
+[![GitHub stars](https://img.shields.io/github/stars/Apprendendo/assistente-recomendacao?style=for-the-badge)](https://github.com/Apprendendo/assistente-recomendacao/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Apprendendo/assistente-recomendacao?style=for-the-badge)](https://github.com/Apprendendo/assistente-recomendacao/network)
+[![GitHub issues](https://img.shields.io/github/issues/Apprendendo/assistente-recomendacao?style=for-the-badge)](https://github.com/Apprendendo/assistente-recomendacao/issues)
 [![GitHub donate](https://img.shields.io/github/sponsors/clcmo?color=pink&style=for-the-badge)](https://github.com/sponsors/clcmo)
 
 Descrição breve do projeto.
