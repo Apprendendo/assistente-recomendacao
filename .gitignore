@@ -1,5 +1,13 @@
+# Pastas que são geradas automaticamente, mas que temos que pedir ao GitIgnore pra não comitar depois na imagem Git.
+
+.DS_Store
+
+# Backend
+.env
 .venv/
 venv/
-node_modules/
 __pycache__/
-.env
+
+# Frontend
+.expo/
+node_modules/
